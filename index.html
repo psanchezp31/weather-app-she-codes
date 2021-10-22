@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Quicksand:wght@700&display=swap" rel="stylesheet"> 
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div id="main-container">
+      <h2 class="text-center">Weather App</h2>
+      <div class="container" id="main-content">
+        <div class="container-weather-data">
+          <h2 id="city" class="text-center"></h2>
+          <div class="temperature">
+            <h1 class="text-center" id="temp"></h1>
+            <a href="#" class="celsius">C°</a> 
+            <span>|</span>
+            <a href="#" class="farenheit">F°</a>
+          </div>
+          <div class="wheater-data">
+            <div id="date"></div>
+            <div id="weather-state"></div>
+            <div id="wind-speed"></div>
+            <img id="icon-weather-state"></img>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input
+            id="input"
+            type="text"
+            class="form-control"
+            placeholder="Enter a city"
+            aria-label="Enter a city"
+            aria-describedby="basic-addon2"
+          />
+          <div class="input-group-append">
+            <button
+              class="btn btn-outline-secondary"
+              id="button-input"
+              type="button"
+            >
+              Search
+            </button>
+            <button type="button" class="btn btn-outline-success" id="current-button">Current</button>
+          </div>
+        </div>
+
+        <div class="container forecast">
+          <div class="col">
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>Crafted with 💜,<a href="https://github.com/psanchezp31/weather-app-she-codes" target="_blank"> open-sourced on Github </a></footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
